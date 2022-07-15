@@ -4,69 +4,75 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="">
+    <link rel="stylesheet" href="/figuras.css">
     <title>Figuras geométricas</title>
 </head>
 <body>
     <header>
         <h1>
-            Figuras geométricas
+            FIGURAS GEOMÉTRICAS
         </h1>  
     </header>
 
     <main>
-        <section>
-            <section class="cuadrado">
-                <h2>Calcula el área y el perímetro de un cuadrado</h2>
+        <section class="containerFather">
+            <section class="containerCard">
+                <h2 class="cardtitle">Calcula el área y el perímetro de un cuadrado</h2>
                 <form action="">
-                    <label for="InputCuadrado">
+                    <label class="cardQuestions" for="InputCuadrado">
                         Escriba cuánto mide cada lado del cuadrado
                     </label>
-                    <input id="InputCuadrado" type="number">
-                    <button type="button" onclick="calcularPerimetroCuadrado()">
-                        Calcular el Perímetro
-                    </button>
-                    <button type="button" onclick="calcularAreaCuadrado()">
-                        Calcular el Área
-                    </button>
+                    <input class="cardAnswer" id="InputCuadrado" type="number" placeholder="Ejemplo 2">
+                    <div class="containerButton">
+                        <button class="myButton" type="button" onclick="calcularPerimetroCuadrado()">
+                            Calcular el Perímetro
+                        </button>
+                        <button class="myButton" type="button" onclick="calcularAreaCuadrado()">
+                            Calcular el Área
+                        </button>
+                    </div>
                 </form>
             </section>
 
-            <section class="triangulo">
-                <h2>Calcula el área y el perímetro de un Triángulo</h2>
+            <section class="containerCard">
+                <h2 class="cardtitle" >Calcula el área y el perímetro de un Triángulo</h2>
                 <form action="">
-                    <label for="ladoA" >
+                    <label class="cardQuestions" for="ladoA" >
                         Escriba cuánto miden los lados del triángulo
-                        <input id="ladoA" type="number" placeholder="ladoA">
-                        <input id="ladoB" type="number" placeholder="ladoB">
-                        <input id="base" type="number" placeholder="base">
-                        <input id="altura" type="number" placeholder="altura">
+                        <input class="cardAnswer" id="ladoA" type="number" placeholder="ladoA">
+                        <input class="cardAnswer" id="ladoB" type="number" placeholder="ladoB">
+                        <input class="cardAnswer" id="base" type="number" placeholder="base">
+                        <input class="cardAnswer" id="altura" type="number" placeholder="altura">
                     </label>
-                    <button type="button" onclick="calcularPerimetroTriangulo()">
-                        Calcular el Perímetro
-                    </button>
-                    <button type="button" onclick="calcularAreaTriangulo()">
-                        Calcular el Área
-                    </button>
+                    <div class="containerButton">
+                        <button class="myButton" type="button" onclick="calcularPerimetroTriangulo()">
+                            Calcular el Perímetro
+                        </button>
+                        <button class="myButton" type="button" onclick="calcularAreaTriangulo()">
+                            Calcular el Área
+                        </button>
+                    </div>
                 </form>
             </section>
 
-            <section class="circulo">
-                <h2>Calcula el Diametro, el Área y el Perímetro de un circulo</h2>
+            <section class="containerCard">
+                <h2 class="cardtitle" >Calcula el Diametro, el Área y el Perímetro de un circulo</h2>
                 <form action="">
-                    <label for="InputCirculo">
+                    <label class="cardQuestions" for="InputCirculo">
                         Escriba cuánto mide cada lado del cuadrado
                     </label>
-                    <input id="radio" type="number" placeholder="Radio">
-                    <button type="button" onclick="calcularDiametroCirculo()">
-                        Calcular el Diametro
-                    </button>
-                    <button type="button" onclick="calcularPerimetroCirculo()">
-                        Calcular el Perímetro
-                    </button>
-                    <button type="button" onclick="calcularAreaCirculo()">
-                        Calcular el Área
-                    </button>
+                    <input class="cardAnswer" id="radio" type="number" placeholder="Radio">
+                    <div class="containerButton">
+                        <button class="myButton" type="button" onclick="calcularDiametroCirculo()">
+                            Calcular el Diametro
+                        </button>
+                        <button class="myButton" type="button" onclick="calcularPerimetroCirculo()">
+                            Calcular el Perímetro
+                        </button>
+                        <button  class="myButton" type="button" onclick="calcularAreaCirculo()">
+                            Calcular el Área
+                        </button>
+                    </div>
                 </form>
             </section>
         </section>
