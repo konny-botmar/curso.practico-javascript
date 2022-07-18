@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/descuento.css">
+    <title>Descuento</title>
+</head>
+<body>
+    <main>
+        <section class="containerFather">
+            <section class="containerCard">
+                <h1 class="cardTitle"> Calcular Descuento</h1>
+                <label class="cardQuestion" for="precio">
+                    Ingrese el valor del producto
+                    <input class="" id="precio" type="number">
+                </label>
+                <label class="cardQuestion" for="descuento">
+                    Ingrese el % de Descuento
+                    <input class="" id="descuento" type="number">
+                </label>
+                <button class="mybutton" onclick="calcularDescuento()">
+                    Calcular Descuento
+                </button>
+                <div>
+                    <p class="cardAnswer" id="answer">
+                        Valor del producto aplicado de Descuento
+                    </p>
+                </div>
+            </section>   
+            <script src="/descuento.js"></script>
+            <section class="containerCard">
+                <h1 class="cardTitle"> Calcular Descuento Con Cupones</h1>
+                    <label class="cardQuestion"  for="InputPrice">Ingrese el valor del producto
+                        <input type="number" id="InputPrice">
+                    </label>
+                    <label class="cardQuestion"  for="inputCoupon">Escriba aquí el nombre del cupón de descuento
+                        <input type="text" id="inputCoupon">
+                    </label>
+        
+                    <button class="mybutton" type="button" onclick="descuentocupon()"> Agregar Cupon </button>
+        
+                    <p class="cardAnswer" id="precioConDescuento">el resultado</p>
+            </section>
+            <script src="/cupones.js"></script>
+        </section>
+    </main>
+</body>
+</html>
