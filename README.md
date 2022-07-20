@@ -12,3 +12,5 @@
 ## taller #2: taller de aplicar descuentos
 
 -hacer un programa en el que el usuario ingrese valores y le salga el costo de un producto aplicando un descuento determinado
+
+## taller #3: taller de media, mediana y moda
